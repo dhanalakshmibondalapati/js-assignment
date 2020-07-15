@@ -1,11 +1,80 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>javascript assignment</title>
-</head>
-<body>
-    <h2>is there anything</h2>
-</body>
-</html>
+
+console.log() 
+2 1. mainly used to log(print) the output to the console. 
+3  We can put any type inside the log(), be it a string, array, object, boolean etc. */ 
+4 // console.log() method  
+5 console.log('abc');   
+6 console.log(1);  
+7 console.log(true);  
+8 console.log(null);  
+9 console.log(undefined);   
+10 console.log([1, 2, 3, 4]); // array inside log  
+11 console.log({a:1, b:2, c:3}); // object inside log  
+12 
+ 
+13 
+ 
+14 /* console.error() 
+15 1. used to log error message to the console. Useful in testing of code. 
+16  By default the error message will be highlighted with red color.   */ 
+17 // console.error() method   
+18 console.error('This is a simple error');  
+19 
+ 
+20 
+ 
+21 /* console.warn() 
+22 1. used to log warning message to the console. 
+23  By default the warning message will be highlighted with yellow color.  */ 
+24  // console.warn() method   
+25  console.warn('This is a warning.');   
+26 
+ 
+27 
+ 
+28 /* console.clear() 
+29 1. used to clear the console. 
+30 The console will be cleared, in case of Chrome a simple overlayed text will be printed like : 
+31  ‘Console was cleared’ while in firefox no message is returned. 
+32 */ 
+33 // console.clear() method   
+34 console.clear();   
+35 
+ 
+36 
+ 
+37 /* console.time() and console.timeEnd() 
+38 1. whenever we want to know the amount of time spend by a block or a function,  
+39 we can make use of the time() and timeEnd() methods provided by the javascript console object.  
+40 They take a label which must be same, and the code inside can be anything( function, object, simple console). 
+41 */ 
+42 // console.time() and console.timeEnd() method   
+43 console.time('abc');  
+44  let fun =  function(){  
+45      console.log('fun is running');  
+46  }  
+47  let fun2 = function(){  
+48      console.log('fun2 is running..');  
+49  }  
+50  fun(); // calling fun();  
+51  fun2(); // calling fun2();  
+52 console.timeEnd('abc');  
+53 In the above code sample,  
+54 we can see that the label is ‘abc’ which is same for both the time() and the timeEnd() method. 
+55  If we increase the amount of code inside the block defined by these methods, then the time will increase.  
+56   It is also worth remembering that the time returned to the console will be in milliseconds and might be different each time we refresh the page. 
+57 
+ 
+58 
+ 
+59  /* console.table() 
+60 1. This method allows us to generate a table inside a console. 
+61  The input must be an array or an object  
+62 // console.table() method  
+63 console.table({'a':1, 'b':2});  
+
+
+
+
+
+
